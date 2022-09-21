@@ -103,7 +103,8 @@ terraform validate
 `fmt` 명령어는 `.tf` 코드를 포맷팅한다.
 
 ```sh
-terraform fmt
+# terraform fmt
+terraform fmt -diff -recursive
 ```
 
 ### Provisioning Infrastructure
@@ -146,3 +147,4 @@ terraform graph | dot -Tsvg > graph.svg
 
 - [Install Terraform](https://learn.hashicorp.com/tutorials/terraform/install-cli)
 - [Terraform CLI Documentation](https://www.terraform.io/cli)
+- [Variables and Outputs](https://www.terraform.io/language/values)
