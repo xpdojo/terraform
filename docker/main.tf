@@ -9,7 +9,11 @@ terraform {
 }
 
 provider "docker" {
+  # Linux, macOS
   host = "unix:///var/run/docker.sock"
+
+  # Windows 11
+  # host = "npipe:////.//pipe//docker_engine"
 }
 
 resource "docker_image" "nginx" {

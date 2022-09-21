@@ -2,8 +2,9 @@
 
 - [Terraform](#terraform)
   - [Install](#install)
-    - [Ubuntu](#ubuntu)
-    - [macOS](#macos)
+    - [Ubuntu 22.04](#ubuntu-2204)
+    - [macOS Monterey](#macos-monterey)
+    - [Windows 11](#windows-11)
   - [autocomplete](#autocomplete)
   - [Usages](#usages)
     - [Initializing Working Directories](#initializing-working-directories)
@@ -14,7 +15,7 @@
 
 ## Install
 
-### Ubuntu
+### Ubuntu 22.04
 
 ```sh
 sudo apt-get update && sudo apt-get install -y gnupg software-properties-common
@@ -55,7 +56,7 @@ Terraform v1.2.9
 on linux_amd64
 ```
 
-### macOS
+### macOS Monterey
 
 ```sh
 brew tap hashicorp/tap
@@ -65,6 +66,12 @@ brew install hashicorp/tap/terraform
 ```sh
 brew update
 brew upgrade hashicorp/tap/terraform
+```
+
+### Windows 11
+
+```ps1
+choco install terraform
 ```
 
 ## autocomplete
