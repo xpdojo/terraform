@@ -118,22 +118,32 @@ terraform fmt -diff -recursive
 
 - [docs](https://www.terraform.io/cli/run)
 
-`plan` 명령어는 실행할 작업을 미리 보여준다.
+`plan` 명령어는 인프라에 적용할 변경 사항의 실행 계획을 생성합니다.
+현재 구성에 따라 리소스에 적용될 변경 사항의 미리보기를 보여줍니다.
 
 ```sh
 terraform plan
 ```
 
-`apply` 명령어는 plan 명령어를 실행한 결과를 실제로 적용한다.
+`apply` 명령어는 Terraform 구성 파일에 설명된 대로 인프라에 변경 사항을 적용합니다.
+변경 사항에 따라 리소스를 생성, 수정 또는 삭제합니다.
 
 ```sh
 terraform apply --auto-approve
 ```
 
-`destroy` 명령어는 apply 명령어를 실행한 결과를 삭제한다.
+`destroy` 명령어는 Terraform이 생성한 모든 리소스를 제거합니다.
 
 ```sh
 terraform destroy --auto-approve
+```
+
+`state list` 명령어는 Terraform이 현재 상태 파일에서 관리하고 있는 모든 리소스를 나열합니다.
+
+`state show <resource>` 명령어는 Terraform이 상태 파일에서 관리하는 특정 리소스에 대한 자세한 정보를 표시합니다.
+
+```sh
+terraform state list
 ```
 
 ### Inspecting Infrastructure
