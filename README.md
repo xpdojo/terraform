@@ -165,3 +165,4 @@ terraform graph | dot -Tsvg > graph.svg
 - [Install Terraform](https://learn.hashicorp.com/tutorials/terraform/install-cli)
 - [Terraform CLI Documentation](https://www.terraform.io/cli)
 - [Variables and Outputs](https://www.terraform.io/language/values)
+- [테라폼(Terraform) 기초 튜토리얼](https://www.44bits.io/ko/post/terraform_introduction_infrastrucute_as_code) - 44bits

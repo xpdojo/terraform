@@ -7,6 +7,16 @@ AWS Lambda를 실행하는 CloutWatch Event를 생성한다.
 - [aws cli](https://github.com/xpdojo/aws/tree/main/aws-cli) 설정이 필요하다.
 
 ```sh
+aws configure list-profiles
+```
+
+```sh
+default
+root-csim
+iam-csim
+```
+
+```sh
 aws configure list
 ```
 
@@ -22,33 +32,19 @@ secret_key     ****************o7/A shared-credentials-file
 ## 초기화
 
 ```sh
-terraform init
-```
-
-## 검증
-
-```sh
-terraform validate
+make
 ```
 
 ## 배포
 
 ```sh
-# terraform apply
-terraform apply -var-file="aws.tfvars" --auto-approve
+make apply
 ```
 
 ## 제거
 
 ```sh
-terraform destroy -var-file="aws.tfvars" --auto-approve
-```
-
-## `.tf` 파일 업데이트 후 재실행
-
-```sh
-terraform init --upgrade
-terraform apply
+make destroy
 ```
 
 ## 참조
